@@ -1,6 +1,6 @@
 const dbClient = require('../index');
 
-dbClient.Users.bulkCreate(
+module.exports = async () => dbClient.Users.bulkCreate(
   [
     {
       firstName: 'Buyer',

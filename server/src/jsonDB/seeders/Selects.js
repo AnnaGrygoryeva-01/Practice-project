@@ -1,6 +1,6 @@
 const dbClient = require('../index');
 
-dbClient.Selects.bulkCreate([
+module.exports = async () => dbClient.Selects.bulkCreate([
   {
     type: 'typeOfName',
     describe: 'Company',

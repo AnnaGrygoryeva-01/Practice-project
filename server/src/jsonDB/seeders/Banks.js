@@ -1,6 +1,6 @@
 const dbClient = require('../index');
 
-dbClient.Banks.bulkCreate([
+module.exports = async () => dbClient.Banks.bulkCreate([
   {
     cardNumber: '4564654564564564',
     name: 'SquadHelp',

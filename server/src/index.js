@@ -7,7 +7,7 @@ const router = require('./router');
 const controller = require('./socketInit');
 const handlerError = require('./handlerError/handler');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const app = express();
 
 app.use(cors());
@@ -24,4 +24,6 @@ controller.createConnection(server);
 
 const runSeeders = require('./jsonDB/seeders');
 const { client } = require('./jsonDB');
-runSeeders(client);
+runSeeders(client).catch((error) => {
+  console.error('Seeding failed:', error);
+});
