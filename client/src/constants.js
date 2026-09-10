@@ -7,6 +7,9 @@ export default {
   CONTEST_STATUS_ACTIVE: 'active',
   CONTEST_STATUS_FINISHED: 'finished',
   CONTEST_STATUS_PENDING: 'pending',
+  COMPANY_CONTACTS: {
+    CONTACT_NUMBER: '(877) 355-3585',
+  },
   NAME_CONTEST: 'name',
   LOGO_CONTEST: 'logo',
   TAGLINE_CONTEST: 'tagline',
