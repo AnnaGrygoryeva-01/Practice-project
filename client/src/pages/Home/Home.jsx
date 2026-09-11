@@ -250,6 +250,19 @@ const Home = props => {
                 DASHBOARD
               </Link>
             </div>
+
+            <div className={styles.contestContainer}>
+              <div className={styles.articleToStartWrapper}>
+                <p>
+                  Ready to get started? Launch a contest and start receiving
+                  submissions instantly.
+                </p>
+                <Link to='/startContest'>
+                  <i className='fas fa-lightbulb'> Start A Contest </i>
+                </Link>
+              </div>
+            </div>
+
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>
               <SlideBar

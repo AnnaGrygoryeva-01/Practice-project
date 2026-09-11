@@ -300,6 +300,33 @@
   @include innerContainer
   background-color: #28D2D0
 
+
+.contestContainer 
+  width: 100%
+  
+
+.articleToStartWrapper
+  box-sizing: border-box
+  margin: 20px auto
+  max-width: 1140px
+  width: 100%  
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 30px 
+  background: linear-gradient(45deg, #28D2D0, #6328d2)
+  color: white
+  gap: 15px
+  @media screen and (max-width: 850px) 
+    flex-direction: column
+
+
+  i
+    color: black
+    font-weight: 200
+    background-color: white
+    padding: 20px
+   
 .blueContainer
   @include innerContainer
   background-color: #2B62EC
@@ -409,5 +436,4 @@
   &:hover
     color: white
     background-color: #28D2D1
-
 
