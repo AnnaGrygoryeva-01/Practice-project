@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import FirstNamingPlatformList from './FirstNamingPlatformList';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -61,6 +62,14 @@ const Home = props => {
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
             </div>
+
+            <div className={styles.firstNamingPlatformContainer}>
+              <p className={styles.firstNamingPlatformText}>
+                World's #1 Naming Platform
+              </p>
+              <FirstNamingPlatformList />
+            </div>
+
             <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
               <div className={styles.cardContainer}>
