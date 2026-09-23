@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import FirstNamingPlatformList from './FirstNamingPlatformList';
+import BetterThanNamingAgency from './BetterThanNamingAgency';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -55,6 +56,20 @@ const Home = props => {
                   DASHBOARD
                 </Link>
               </div>
+            </div>
+            <div className={styles.namingAgencyContainer}>
+              <h2>Like A Naming Agency, But Better</h2>
+              <p className={styles.namingAgencyText}>
+                With Atom's managed contests, leverage our team's naming
+                expertise and our pool of 300K+ naming experts. Our
+                hybrid-solution partners you with a trained Atom branding
+                consultant who will guide your crowdsourcing process
+                step-by-step to get the best results possible.
+              </p>
+              <BetterThanNamingAgency />
+              <Link className={styles.learnMoreBtn} to='/dashboard'>
+                Learn More
+              </Link>
             </div>
             <div className={styles.greyContainer}>
               <SlideBar

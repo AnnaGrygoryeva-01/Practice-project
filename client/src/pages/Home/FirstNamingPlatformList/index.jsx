@@ -9,7 +9,7 @@ function FirstNamingPlatformList () {
           <img src={c.iconSrc} alt={c.title} />
           <h3>
             {c.title.map(t => (
-              <div>{t}</div>
+              <div key={t}>{t}</div>
             ))}
           </h3>
           <p>{c.body}</p>

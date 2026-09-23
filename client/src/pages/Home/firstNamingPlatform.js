@@ -6,7 +6,7 @@ const firstNamingPlatformCards = [
   {
     iconSrc: `${STATIC_IMAGES_PATH}first_naming_platform/h-icon1.svg`,
     title: ['Rated', ' 4.9 / 5 stars'],
-    body: 'From 35K+ Custome',
+    body: 'From 35K+ Customers',
   },
   {
     iconSrc: `${STATIC_IMAGES_PATH}first_naming_platform/h-icon2.svg`,
