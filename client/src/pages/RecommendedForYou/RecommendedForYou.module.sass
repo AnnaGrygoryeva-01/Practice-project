@@ -1,0 +1,88 @@
+.mainContainer
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+
+
+.moreOptionsContainer
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 60px 20px
+    background: linear-gradient(120deg, #1f1b4d 0%, #29276c 50%, #2e2478 100%)
+    color: white
+    text-align: center
+
+    h2
+        font-size: 28px
+        font-weight: bold
+        margin-bottom: 10px
+
+    > p
+        font-size: 14px
+        color: rgba(255, 255, 255, 0.75)
+        margin-bottom: 40px
+
+.moreOptionsSmallBoxWrapper
+    display: flex
+    justify-content: center
+    gap: 24px
+    max-width: 900px
+    width: 100%
+
+    @media screen and (max-width: 770px)
+        flex-direction: column
+        align-items: center
+
+.moreOptionsSmallBox
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex: 1 1 0
+    max-width: 440px
+    padding: 35px 35px 30px
+    border-radius: 16px
+    border: 1px solid rgba(255, 255, 255, 0.15)
+    background-color: rgba(255, 255, 255, 0.1)
+
+    @media screen and (max-width: 990px)
+        padding: 35px 25px 30px
+
+    @media screen and (max-width: 770px)
+        flex: none
+        width: 100%
+
+    span
+        font-size: 36px
+        margin-bottom: 25px
+
+    h3
+        font-size: 18px
+        font-weight: bold
+        margin-bottom: 15px
+
+    p
+        font-size: 14px
+        line-height: 22px
+        color: rgba(255, 255, 255, 0.75)
+        margin-bottom: 25px
+
+.moreOptionsBtn
+    padding: 13px 24px
+    border-radius: 6px
+    background: linear-gradient(90deg, #f0a830, #ec7b28)
+    color: white
+    font-size: 14px
+    font-weight: bold
+
+    &:hover
+        color: white
+        text-decoration: none
+        opacity: 0.9
+
+.footer
+    margin-top: auto
+
