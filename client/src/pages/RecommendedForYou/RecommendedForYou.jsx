@@ -3,6 +3,7 @@ import styles from './RecommendedForYou.module.sass';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import moreOptionsTabs from './moreOptionsTabs.json';
+import popularDomainsCards from './popularDomainsCards.js';
 
 function RecommendedForYou () {
   return (
@@ -19,7 +20,17 @@ function RecommendedForYou () {
       <section className={styles.popularDomainsContainer}>
         <h2>🔥 Popular Domains</h2>
         <p>Browse and interact to get personalized picks</p>
-        <ul></ul>
+        <ul className={styles.domainsCards}>
+          {popularDomainsCards.map((c, i) => (
+            <li key={i} className={styles.domainCard}>
+              <div className={styles.domainImageWrapper}>
+                <img src={c.iconSrc} alt={c.title} />
+              </div>
+              <h3>{c.title}</h3>
+              <p>{c.price}</p>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <article className={styles.moreOptionsContainer}>
