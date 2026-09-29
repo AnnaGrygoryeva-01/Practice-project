@@ -63,6 +63,21 @@ const popularDomainsCards = [
     title: 'Galore.com',
     price: '$46000',
   },
+  {
+    iconSrc: `${STATIC_IMAGES_PATH}popular_domains/p-icon13.webp`,
+    title: 'Shrink.io',
+    price: '$99995',
+  },
+  {
+    iconSrc: `${STATIC_IMAGES_PATH}popular_domains/p-icon14.webp`,
+    title: 'Sample.com',
+    price: '$1752000',
+  },
+  {
+    iconSrc: `${STATIC_IMAGES_PATH}popular_domains/p-icon15.webp`,
+    title: 'Recover.io',
+    price: '$149999',
+  },
 ];
 
 export default popularDomainsCards;

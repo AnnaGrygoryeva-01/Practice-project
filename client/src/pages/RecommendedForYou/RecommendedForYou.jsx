@@ -4,17 +4,27 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import moreOptionsTabs from './moreOptionsTabs.json';
 import popularDomainsCards from './popularDomainsCards.js';
+import searchTags from './searchTags.json';
 
 function RecommendedForYou () {
   return (
     <div className={styles.mainContainer}>
       <Header />
       <article className={styles.recommendedContainer}>
-        <div>
-          <h1>✨ Recommended For You</h1>
-          <p>Personalized picks based on your browsing & favorites</p>
+        <div className={styles.recommendedInner}>
+          <div className={styles.recommendedText}>
+            <h1>✨ Recommended For You</h1>
+            <p>Personalized picks based on your browsing & favorites</p>
+          </div>
+          <div className={styles.refineBar}>
+            <input
+              type='text'
+              placeholder='Refine by keyword (e.g., tech, health, food...)'
+              aria-label='Refine'
+            />
+            <button type='button'>Refine</button>
+          </div>
         </div>
-        {/* <input>Refine</input> */}
       </article>
 
       <section className={styles.popularDomainsContainer}>
@@ -49,6 +59,28 @@ function RecommendedForYou () {
           ))}
         </ul>
       </article>
+
+      <section className={styles.searchContainer}>
+        <div className={styles.searchBar}>
+          <span className='fas fa-search' aria-hidden='true'></span>
+          <input
+            type='text'
+            placeholder='Search Over 300,000+ Premium Names'
+            aria-label='Search premium names'
+          />
+          <button type='button' aria-label='Search'>
+            <span className='fas fa-search' aria-hidden='true'></span>
+          </button>
+        </div>
+        <ul className={styles.searchTags}>
+          {searchTags.map(tag => (
+            <li key={tag}>
+              <a href='https://www.google.com'>{tag}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <Footer className={styles.footer} />
     </div>
   );
