@@ -1,12 +1,15 @@
 const env = process.env.NODE_ENV || 'development';
 const serverIP = 'localhost';
 const serverPort = 5001;
-export default {
+const CONSTANTS = {
   CUSTOMER: 'customer',
   CREATOR: 'creator',
   CONTEST_STATUS_ACTIVE: 'active',
   CONTEST_STATUS_FINISHED: 'finished',
   CONTEST_STATUS_PENDING: 'pending',
+  COMPANY_CONTACTS: {
+    CONTACT_NUMBER: '(877) 355-3585',
+  },
   NAME_CONTEST: 'name',
   LOGO_CONTEST: 'logo',
   TAGLINE_CONTEST: 'tagline',
@@ -82,3 +85,5 @@ export default {
     },
   ],
 };
+
+export default CONSTANTS;

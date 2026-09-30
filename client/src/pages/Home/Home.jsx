@@ -8,6 +8,8 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import FirstNamingPlatformList from './FirstNamingPlatformList';
+import BetterThanNamingAgency from './BetterThanNamingAgency';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -55,12 +57,34 @@ const Home = props => {
                 </Link>
               </div>
             </div>
+            <div className={styles.namingAgencyContainer}>
+              <h2>Like A Naming Agency, But Better</h2>
+              <p className={styles.namingAgencyText}>
+                With Atom's managed contests, leverage our team's naming
+                expertise and our pool of 300K+ naming experts. Our
+                hybrid-solution partners you with a trained Atom branding
+                consultant who will guide your crowdsourcing process
+                step-by-step to get the best results possible.
+              </p>
+              <BetterThanNamingAgency />
+              <Link className={styles.learnMoreBtn} to='/dashboard'>
+                Learn More
+              </Link>
+            </div>
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
             </div>
+
+            <div className={styles.firstNamingPlatformContainer}>
+              <p className={styles.firstNamingPlatformText}>
+                World's #1 Naming Platform
+              </p>
+              <FirstNamingPlatformList />
+            </div>
+
             <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
               <div className={styles.cardContainer}>
@@ -250,6 +274,19 @@ const Home = props => {
                 DASHBOARD
               </Link>
             </div>
+
+            <div className={styles.contestContainer}>
+              <div className={styles.articleToStartWrapper}>
+                <p>
+                  Ready to get started? Launch a contest and start receiving
+                  submissions instantly.
+                </p>
+                <Link to='/startContest'>
+                  <i className='fas fa-lightbulb'> Start A Contest </i>
+                </Link>
+              </div>
+            </div>
+
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>
               <SlideBar

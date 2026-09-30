@@ -290,6 +290,46 @@
   @include innerContainer
   background-color: #FAFAFA
 
+.namingAgencyContainer
+  @include innerContainer
+
+  h2
+    margin: 30px 0 20px 0
+    font-size: 35px
+    font-weight: bold
+    color: #1b1f45
+
+.namingAgencyText
+  max-width: 800px
+  padding: 0 15px
+  text-align: center
+  font-size: 16px
+  line-height: 22px
+  color: #6b6b6b
+
+.learnMoreBtn
+  padding: 18px 24px
+  border-radius: 7px
+  background-color: #f75727
+  color: white
+  font-size: 16px
+  font-weight: bold
+
+  &:hover
+    color: white
+    text-decoration: none
+    background-color: #d95f39
+
+.firstNamingPlatformContainer
+  @include innerContainer
+  background-color: #FAFAFA
+  
+.firstNamingPlatformText
+  font-size: 35px
+  font-weight: bold
+  padding-bottom: 40px
+  
+
 
 .whiteContainer
   @include innerContainer
@@ -300,6 +340,33 @@
   @include innerContainer
   background-color: #28D2D0
 
+
+.contestContainer 
+  width: 100%
+  
+
+.articleToStartWrapper
+  box-sizing: border-box
+  margin: 20px auto
+  max-width: 1140px
+  width: 100%  
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 30px 
+  background: linear-gradient(45deg, #28D2D0, #6328d2)
+  color: white
+  gap: 15px
+  @media screen and (max-width: 850px) 
+    flex-direction: column
+
+
+  i
+    color: black
+    font-weight: 200
+    background-color: white
+    padding: 20px
+   
 .blueContainer
   @include innerContainer
   background-color: #2B62EC
@@ -409,5 +476,4 @@
   &:hover
     color: white
     background-color: #28D2D1
-
 

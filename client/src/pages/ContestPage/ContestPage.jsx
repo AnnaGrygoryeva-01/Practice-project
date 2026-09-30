@@ -166,10 +166,18 @@ class ContestPage extends React.Component {
                   Brief
                 </span>
                 <span
-                  onClick={() => changeContestViewMode(false)}
+                  onClick={() => {
+                    if (this.props.contestByIdStore.offers.length)
+                      changeContestViewMode(false);
+                  }}
                   className={classNames(styles.btn, {
                     [styles.activeBtn]: !isBrief,
                   })}
+                  style={
+                    this.props.contestByIdStore.offers.length
+                      ? {}
+                      : { backgroundColor: 'grey', cursor: 'auto' }
+                  }
                 >
                   Offer
                 </span>

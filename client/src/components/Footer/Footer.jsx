@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import styles from './Footer.module.sass';
 import CONSTANTS from '../../constants';
 
@@ -19,8 +20,9 @@ class Footer extends Component {
   }
 
   render () {
+    const { className } = this.props;
     return (
-      <div className={styles.footerContainer}>
+      <div className={classNames(styles.footerContainer, className)}>
         <div className={styles.footerTop}>
           <div>{this.topFooterRender()}</div>
         </div>

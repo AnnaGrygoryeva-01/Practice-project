@@ -59,7 +59,10 @@ const ContestSideBar = props => {
             </div>
           </div>
         </div>
-        {props.data.id !== User.id && (
+
+        {/* Секцію показуємо лише користувачу з роллю creator — саме йому
+            потрібні дані автора контесту (включно з email). */}
+        {props.data.role === CONSTANTS.CREATOR && (
           <div className={styles.infoCustomerContainer}>
             <span className={styles.labelCustomerInfo}>
               About Contest Holder
@@ -76,6 +79,7 @@ const ContestSideBar = props => {
               <div className={styles.customerNameContainer}>
                 <span>{`${User.firstName} ${User.lastName}`}</span>
                 <span>{User.displayName}</span>
+                <span>{User.email}</span>
               </div>
             </div>
           </div>

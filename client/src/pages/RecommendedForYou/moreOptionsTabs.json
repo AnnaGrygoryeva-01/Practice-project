@@ -1,0 +1,14 @@
+[
+  {
+    "icon": "fas fa-tag",
+    "title": "Browse All Names",
+    "text": "Explore our curated collection of premium brand names for sale with a matching URL.",
+    "btn": "View All Names"
+  },
+  {
+    "icon": "fas fa-rocket",
+    "title": "Launch A Contest",
+    "text": "Get custom name ideas from hundreds of naming experts in real time.",
+    "btn": "See How It Works"
+  }
+]
