@@ -39,7 +39,7 @@ class Header extends React.Component {
               }
               alt='user'
             />
-            <span>{`Hi, ${this.props.data.displayName}`}</span>
+            <span>{`Hi, ${this.props.data.firstName} ${this.props.data.lastName}`}</span>
             <img
               src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
               alt='menu'
